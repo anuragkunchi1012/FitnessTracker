@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mainlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F7F7F"
+    tools:context=".WorkoutFragment"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/prograsslayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="invisible"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circular_shape"
+            android:progressDrawable="@drawable/circular_progress_bar"
+
+            />
+
+        <TextView
+            android:id="@+id/progresstext"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="50dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_marginTop="10dp"
+            android:background="#826DFA"
+            android:text="Exit"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/workoutname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Workout Name"
+        android:textSize="18sp"
+        />
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        >
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Activate rest countdown"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textview1"
+            android:checked="true"
+            />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/checkbox"
+            android:textSize="18sp"
+            android:text="Rest time (Sec.)"
+            />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/textview2"
+            android:hint="5"
+            android:inputType="number"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+
+        />
+    <TextView
+        android:id="@+id/textview11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last 5 Workout"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:background="#F28CC1"
+        />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+
+</LinearLayout>

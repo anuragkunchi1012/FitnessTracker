@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/stopwatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stopwatch"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            />
+
+        <ImageView
+            android:id="@+id/exitimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cancel"
+
+            />
+
+    </RelativeLayout>
+    <Chronometer
+        android:id="@+id/mychronometer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="19dp"
+        >
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="#E44027"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:text="Reset"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pause"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="#E44027"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Pause"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="#E44027"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:text="Exit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

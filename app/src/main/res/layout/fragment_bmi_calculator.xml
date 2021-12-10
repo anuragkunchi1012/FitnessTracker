@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BmiCalculator">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/addData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#2F68FA"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:hint="Eg. 150 (in cm)"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Weight: "
+                android:textSize="18sp"
+                android:textColor="#fff"
+                />
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:hint="Eg. 60 (in kg))"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/saveDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center_horizontal"
+            android:text="Calculate BMI"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/viewData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:padding="8sp"
+        android:background="#826DFA"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI Details "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#F7812A"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="BMI: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/showbmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bmi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="BMI Remark: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/showremark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
